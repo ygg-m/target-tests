@@ -1,4 +1,4 @@
-function isFibonacciNumber(num: number): boolean {
+function isFibonacciNumber(num) {
   let prevFib = 0;
   let currFib = 1;
 

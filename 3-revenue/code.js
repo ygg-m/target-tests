@@ -1,9 +1,6 @@
-interface RevenueData {
-  day: string;
-  revenue: number;
-}
+const revenue = require("./revenue");
 
-const getRevenueStats = (revenueData: RevenueData[]) => {
+const getRevenueStats = (revenueData) => {
   // Remove days without revenue
   const validRevenueData = revenueData.filter((data) => data.revenue !== 0);
 
@@ -31,3 +28,5 @@ const getRevenueStats = (revenueData: RevenueData[]) => {
     aboveAvgRevenueDays,
   };
 };
+
+console.log(getRevenueStats(revenue));
