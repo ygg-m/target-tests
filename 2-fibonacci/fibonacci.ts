@@ -10,3 +10,8 @@ function isFibonacciNumber(num: number): boolean {
 
   return currFib === num;
 }
+
+console.log(isFibonacciNumber(5));
+console.log(isFibonacciNumber(7));
+console.log(isFibonacciNumber(13));
+console.log(isFibonacciNumber(34));
